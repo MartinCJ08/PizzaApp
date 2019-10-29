@@ -10,13 +10,41 @@ import UIKit
 
 class MasaController: UIViewController {
 
+    @IBOutlet weak var thinSwitch: UISwitch!
+    @IBOutlet weak var crunSwitch: UISwitch!
+    @IBOutlet weak var thickSwitch: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func thinAct(_ sender: Any) {
+        if(thinSwitch.isOn){
+            crunSwitch.setOn(false,animated: true)
+            thickSwitch.setOn(false,animated: true)
+        }else{
+            thinSwitch.setOn(true, animated: false)
+        }
+    }
+    
+    @IBAction func crunAct(_ sender: Any) {
+        if(crunSwitch.isOn){
+            thinSwitch.setOn(false,animated: true)
+            thickSwitch.setOn(false,animated: true)
+        }else{
+            crunSwitch.setOn(true, animated: false)
+        }
+    }
+    
+    @IBAction func thickAct(_ sender: Any) {
+        if(thinSwitch.isOn){
+            crunSwitch.setOn(false,animated: true)
+            thinSwitch.setOn(false,animated: true)
+        }else{
+            thickSwitch.setOn(true, animated: false)
+        }
+    }
     /*
     // MARK: - Navigation
 

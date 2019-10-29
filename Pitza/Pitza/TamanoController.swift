@@ -21,13 +21,30 @@ class TamanoController: UIViewController {
     }
     
     @IBAction func smallAct(_ sender: Any) {
-        medSwitch.setOn(false, animated: true)
-        largeSwitch.setOn(false, animated: true)
+        if(smallSwitch.isOn){
+            medSwitch.setOn(false, animated: true)
+            largeSwitch.setOn(false, animated: true)
+        }else{
+            smallSwitch.setOn(true, animated: false)
+        }
     }
+    
     @IBAction func medAct(_ sender: Any) {
+        if(medSwitch.isOn){
+            smallSwitch.setOn(false,animated: true)
+            largeSwitch.setOn(false,animated: true)
+        }else{
+            medSwitch.setOn(true, animated: false)
+        }
     }
     
     @IBAction func largeAct(_ sender: Any) {
+        if(largeSwitch.isOn){
+            smallSwitch.setOn(false,animated: true)
+            medSwitch.setOn(false,animated: true)
+        }else{
+            largeSwitch.setOn(true, animated: false)
+        }
     }
     
 

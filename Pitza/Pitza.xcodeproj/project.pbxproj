@@ -14,7 +14,6 @@
 		A19F4D9D2367A43B009E94E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19F4D9B2367A43B009E94E8 /* LaunchScreen.storyboard */; };
 		A19F4DA52367B369009E94E8 /* TamanoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19F4DA42367B369009E94E8 /* TamanoController.swift */; };
 		A19F4DA72367B3A1009E94E8 /* MasaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19F4DA62367B3A1009E94E8 /* MasaController.swift */; };
-		A19F4DA92367B3C9009E94E8 /* QuesoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19F4DA82367B3C9009E94E8 /* QuesoController.swift */; };
 		A19F4DAB2367B3E6009E94E8 /* IngredienteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19F4DAA2367B3E6009E94E8 /* IngredienteController.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +27,6 @@
 		A19F4D9E2367A43B009E94E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A19F4DA42367B369009E94E8 /* TamanoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamanoController.swift; sourceTree = "<group>"; };
 		A19F4DA62367B3A1009E94E8 /* MasaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasaController.swift; sourceTree = "<group>"; };
-		A19F4DA82367B3C9009E94E8 /* QuesoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuesoController.swift; sourceTree = "<group>"; };
 		A19F4DAA2367B3E6009E94E8 /* IngredienteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredienteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,7 +68,6 @@
 				A19F4D9E2367A43B009E94E8 /* Info.plist */,
 				A19F4DA42367B369009E94E8 /* TamanoController.swift */,
 				A19F4DA62367B3A1009E94E8 /* MasaController.swift */,
-				A19F4DA82367B3C9009E94E8 /* QuesoController.swift */,
 				A19F4DAA2367B3E6009E94E8 /* IngredienteController.swift */,
 			);
 			path = Pitza;
@@ -149,7 +146,6 @@
 			files = (
 				A19F4D952367A432009E94E8 /* ViewController.swift in Sources */,
 				A19F4DA72367B3A1009E94E8 /* MasaController.swift in Sources */,
-				A19F4DA92367B3C9009E94E8 /* QuesoController.swift in Sources */,
 				A19F4DA52367B369009E94E8 /* TamanoController.swift in Sources */,
 				A19F4DAB2367B3E6009E94E8 /* IngredienteController.swift in Sources */,
 				A19F4D932367A432009E94E8 /* AppDelegate.swift in Sources */,
