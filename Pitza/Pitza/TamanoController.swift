@@ -45,6 +45,26 @@ class TamanoController: UIViewController {
         }else{
             largeSwitch.setOn(true, animated: false)
         }
+        
+        print(getPizzaSize())
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as? MasaController
+        vc?.pizzaSize = getPizzaSize()
+    }
+    
+    
+    func getPizzaSize()->String{
+        var result = ""
+        if(smallSwitch.isOn){
+            result = "small"
+        }else if(medSwitch.isOn){
+            result = "medium"
+        }else if(largeSwitch.isOn){
+            result = "large"
+        }
+        return result
     }
     
 

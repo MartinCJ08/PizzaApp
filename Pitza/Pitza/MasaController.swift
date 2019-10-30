@@ -9,6 +9,8 @@
 import UIKit
 
 class MasaController: UIViewController {
+    
+    var pizzaSize: String?
 
     @IBOutlet weak var thinSwitch: UISwitch!
     @IBOutlet weak var crunSwitch: UISwitch!
@@ -45,6 +47,8 @@ class MasaController: UIViewController {
             thickSwitch.setOn(true, animated: false)
         }
     }
+    
+    
     /*
     // MARK: - Navigation
 
