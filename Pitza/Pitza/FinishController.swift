@@ -1,39 +1,30 @@
 //
-//  IngredienteController.swift
+//  FinishController.swift
 //  Pitza
 //
-//  Created by moviles on 10/28/19.
+//  Created by moviles on 10/31/19.
 //  Copyright © 2019 moviles. All rights reserved.
 //
 
 import UIKit
 
-class IngredienteController: UIViewController {
+class FinishController: UIViewController {
     
     var pizzaSize: String?
     var flour: String?
     var cheese: String?
-    
-    var ingredients = Set<String>()
 
-    @IBOutlet weak var pep: UISwitch!
-    @IBOutlet weak var jam: UISwitch!
+    @IBOutlet weak var lblDeliver: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lblDeliver.text = "Size: \(pizzaSize!) \nFlour: \(flour!) \nCheese: \(cheese!)"
 
         // Do any additional setup after loading the view.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as? FinishController
-        vc?.pizzaSize = self.pizzaSize
-        vc?.flour = self.flour
-        vc?.cheese = self.cheese
-    }
+    
 
-    @IBAction func jamAct(_ sender: Any) {
-        
-    }
     /*
     // MARK: - Navigation
 

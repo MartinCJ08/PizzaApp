@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1678D9A236B96FE00EF6ACB /* CheeseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1678D99236B96FE00EF6ACB /* CheeseController.swift */; };
+		A1678D9C236BA6E900EF6ACB /* FinishController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1678D9B236BA6E900EF6ACB /* FinishController.swift */; };
 		A19F4D932367A432009E94E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19F4D922367A432009E94E8 /* AppDelegate.swift */; };
 		A19F4D952367A432009E94E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19F4D942367A432009E94E8 /* ViewController.swift */; };
 		A19F4D982367A432009E94E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19F4D962367A432009E94E8 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1678D99236B96FE00EF6ACB /* CheeseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheeseController.swift; sourceTree = "<group>"; };
+		A1678D9B236BA6E900EF6ACB /* FinishController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishController.swift; sourceTree = "<group>"; };
 		A19F4D8F2367A432009E94E8 /* Pitza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pitza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19F4D922367A432009E94E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A19F4D942367A432009E94E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				A19F4DA42367B369009E94E8 /* TamanoController.swift */,
 				A19F4DA62367B3A1009E94E8 /* MasaController.swift */,
 				A19F4DAA2367B3E6009E94E8 /* IngredienteController.swift */,
+				A1678D99236B96FE00EF6ACB /* CheeseController.swift */,
+				A1678D9B236BA6E900EF6ACB /* FinishController.swift */,
 			);
 			path = Pitza;
 			sourceTree = "<group>";
@@ -144,9 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1678D9A236B96FE00EF6ACB /* CheeseController.swift in Sources */,
 				A19F4D952367A432009E94E8 /* ViewController.swift in Sources */,
 				A19F4DA72367B3A1009E94E8 /* MasaController.swift in Sources */,
 				A19F4DA52367B369009E94E8 /* TamanoController.swift in Sources */,
+				A1678D9C236BA6E900EF6ACB /* FinishController.swift in Sources */,
 				A19F4DAB2367B3E6009E94E8 /* IngredienteController.swift in Sources */,
 				A19F4D932367A432009E94E8 /* AppDelegate.swift in Sources */,
 			);

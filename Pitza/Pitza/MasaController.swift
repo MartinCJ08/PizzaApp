@@ -12,6 +12,7 @@ class MasaController: UIViewController {
     
     var pizzaSize: String?
 
+
     @IBOutlet weak var thinSwitch: UISwitch!
     @IBOutlet weak var crunSwitch: UISwitch!
     @IBOutlet weak var thickSwitch: UISwitch!
@@ -40,12 +41,31 @@ class MasaController: UIViewController {
     }
     
     @IBAction func thickAct(_ sender: Any) {
-        if(thinSwitch.isOn){
+        if(thickSwitch.isOn){
             crunSwitch.setOn(false,animated: true)
             thinSwitch.setOn(false,animated: true)
         }else{
             thickSwitch.setOn(true, animated: false)
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as? CheeseController
+        vc?.pizzaSize = self.pizzaSize
+        vc?.flour = getFlour()
+    }
+
+    func getFlour()->String{
+        var sResul = ""
+        if(thickSwitch.isOn){
+            sResul = "Thin"
+        }else if(crunSwitch.isOn){
+            sResul = "Crunchy"
+        }else if(thickSwitch.isOn){
+            sResul = "Thick"
+        }
+        
+        return sResul
     }
     
     
