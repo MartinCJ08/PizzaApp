@@ -13,12 +13,18 @@ class FinishController: UIViewController {
     var pizzaSize: String?
     var flour: String?
     var cheese: String?
+    
+     var ingredients = Set<String>()
 
     @IBOutlet weak var lblDeliver: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        var valIngredient = ""
+        for ingredient in ingredients{
+            valIngredient = ingredient + valIngredient + "\n"
+        }
         
-        lblDeliver.text = "Size: \(pizzaSize!) \nFlour: \(flour!) \nCheese: \(cheese!)"
+        lblDeliver.text = "Size: \(pizzaSize!) \nFlour: \(flour!) \nCheese: \(cheese!) \nIngredients: \(valIngredient)"
 
         // Do any additional setup after loading the view.
     }
